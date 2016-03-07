@@ -1,4 +1,13 @@
-<h2 id="title">Welcome to Ember.js</h2>
+{{#md-navbar name='Dashboard'}}
+  <!-- A workaround to get the "active" class
+    to apply to the active <li> automatically -->
+  {{#link-to 'application' tagName='li'}}
+    {{link-to 'Home' 'application'}}
+  {{/link-to}}
+  {{#link-to 'index' tagName='li'}}
+    {{link-to 'HDFS' 'index'}}
+  {{/link-to}}
+{{/md-navbar}}
 
 {{outlet}}
 
