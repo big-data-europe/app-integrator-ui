@@ -1,9 +1,4 @@
 {{#md-navbar name='Dashboard'}}
-  <!-- A workaround to get the "active" class
-  to apply to the active <li> automatically -->
-  {{#link-to 'application' tagName='li'}}
-    {{link-to 'Home' 'application'}}
-  {{/link-to}}
   {{#each model as |ui|}}
     <li class="{{if ui.active 'active'}}" {{action "selectUi" ui}}>
       <a>{{ui.label}}</a>
@@ -11,11 +6,8 @@
   {{/each}}
 {{/md-navbar}}
 
-<div class="frame-wrapper">
-  <iframe src="{{activeUi.baseUrl}}"></iframe>
-</div>
+{{render-ui activeUi=activeUi}}
 
 {{outlet}}
 
-{{!-- ember-cli-materialize modal container --}}
 {{md-modal-container}}
