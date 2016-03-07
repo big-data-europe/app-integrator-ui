@@ -1,0 +1,35 @@
+{ "data": [
+  {
+    "id": 1,
+    "type": "user-interfaces",
+    "attributes": {
+      "label": "mu-semtech",
+      "base-url": "http://mu.semte.ch"
+    }
+  },
+  {
+    "id": 2,
+    "type": "user-interfaces",
+    "attributes": {
+      "label": "BDE",
+      "base-url": "http://big-data-europe.eu"
+    }
+  },
+  {
+    "id": 3,
+    "type": "user-interfaces",
+    "attributes": {
+      "label": "TenForce",
+      "base-url": "http://www.tenforce.com"
+    }
+  },
+  {
+    "id": 3,
+    "type": "user-interfaces",
+    "attributes": {
+      "label": "TenForce",
+      "base-url": "http://www.tenforce.com"
+    }
+  }
+]
+}
