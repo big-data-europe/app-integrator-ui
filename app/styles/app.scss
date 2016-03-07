@@ -1,2 +1,10 @@
+// Example app.scss
+@import 'components/color';
+
+// Custom color settings go here
+$primary-color: color("blue-grey", "lighten-1");
+$secondary-color: color("pink", "accent-4");
+
+@import 'components/variables';
 @import 'materialize';
 @import 'ember-cli-materialize';
