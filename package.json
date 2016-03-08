@@ -1,7 +1,7 @@
 {
   "name": "bde-integrator-user-interface",
   "version": "0.1.0",
-  "description": "Small description for bde-integrator-user-interface goes here",
+  "description": "Wrapping user interface for embedding pipeline component interfaces",
   "private": true,
   "directories": {
     "doc": "doc",

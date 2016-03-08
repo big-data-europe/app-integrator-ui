@@ -1,5 +1,13 @@
 # Bde-integrator-user-interface
 
+The Integrator User Interface is an iframe application which allows us to easily
+show multiple separate user interfaces in a single view, using iframes.  The app
+is styled in a way that suits the Big Data Europe style.
+
+Configuration occurs by supplying a JSONAPI compliant response to the
+`/user-interfaces` call.  See the supplied file in `/public/user-interfaces` for
+a quick example.
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
@@ -28,11 +36,6 @@ You will need the following things properly installed on your computer.
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
 
 ### Building
 
