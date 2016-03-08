@@ -1,6 +1,6 @@
 {
   "name": "bde-integrator-user-interface",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wrapping user interface for embedding pipeline component interfaces",
   "private": true,
   "directories": {
