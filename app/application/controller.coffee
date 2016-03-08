@@ -1,12 +1,11 @@
 `import Ember from 'ember'`
 
 ApplicationController = Ember.Controller.extend
-  activeUi: Ember.computed 'model.[]', 'model.@each.active', ->
-    @get('model').findBy 'active', true
+  activeUi: Ember.computed 'model.[]', 'activeId', ->
+    @get('model').findBy 'id', @get('activeId')
   actions:
     selectUi: (ui) ->
-      @get('model').map (item) ->
-        item.set 'active', item == ui
+      @set 'activeId', ui.get('id')
       return
 
 

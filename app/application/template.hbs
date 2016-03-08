@@ -1,6 +1,6 @@
 {{#md-navbar name='Dashboard'}}
   {{#each model as |ui|}}
-    <li class="{{if ui.active 'active'}}" {{action "selectUi" ui}}>
+    <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui}}>
       <a>{{ui.label}}</a>
     </li>
   {{/each}}
