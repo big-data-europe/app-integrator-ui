@@ -6,4 +6,4 @@ is styled in a way that suits the Big Data Europe style.
 
 Configuration occurs by supplying a JSONAPI compliant response to the
 `/user-interfaces` call.  See the supplied file in `/user-interfaces` for
-a quick example. You can mount your own custom config in `/config/user-interfaces`.
+a quick example. You can mount your own custom config in `/app/config/user-interfaces`.
