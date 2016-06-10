@@ -8,7 +8,7 @@ ApplicationController = Ember.Controller.extend
     @get('model').findBy 'id', @get('activeId')
   actions:
     selectUi: (ui) ->
-      @set 'appendPath', ''
+      @set 'appendPath', ui.get('appendPath')
       @set 'activeId', ui.get('id')
       return
 
