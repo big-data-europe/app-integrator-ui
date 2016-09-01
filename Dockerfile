@@ -16,5 +16,6 @@ RUN apt-get update \
     && cd /app \
     && unzip dist.zip \
     && mv dist/* . \
+    && rm /app/user-interfaces \
     && ln -s /app/config/user-interfaces /app/user-interfaces \
     && rm /app/dist.zip /package.json
