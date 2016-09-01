@@ -9,7 +9,12 @@ $secondary-color: color("pink", "accent-4");
 @import 'materialize';
 @import 'ember-cli-materialize';
 
-
+nav {
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: auto 64px;
+    background-position: 50px 0;
+}
 
 .frame-wrapper {
     & {
