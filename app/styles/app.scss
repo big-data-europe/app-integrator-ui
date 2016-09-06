@@ -1,5 +1,7 @@
 // Example app.scss
 @import 'components/color';
+// Fix for Roboto font path
+$roboto-font-path: '../assets/';
 
 // Custom color settings go here
 $primary-color: color("blue-grey", "lighten-1");
