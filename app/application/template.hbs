@@ -1,4 +1,4 @@
-{{#md-navbar name='Dashboard'}}
+{{#md-navbar name='Dashboard' }}
   {{#each model as |ui|}}
     <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui}}>
       <a>{{ui.label}}</a>
@@ -6,8 +6,19 @@
   {{/each}}
 {{/md-navbar}}
 
-{{render-ui activeUi=activeUi appendPath=appendPath}}
 
-{{outlet}}
+{{#if activeUi}}
+  <div class="frame-wrapper">
+    {{#each model as |ui|}}
+      {{render-ui activeUi=activeUi ui=ui}}
+    {{/each}}
+  </div>
+{{else}}
+  <div class="col s12 light center header">
+    <h2>Welcome to UI Integator</h2>
+    <p>To get started select one of the items in the header.</p>
+  </div>
+{{/if}}
 
-{{md-modal-container}}
+
+{{outlet}} {{md-modal-container}}

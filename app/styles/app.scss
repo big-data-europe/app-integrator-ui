@@ -1,41 +1,48 @@
 // Example app.scss
-@import 'components/color';
-// Fix for Roboto font path
+@import 'components/color'; // Fix for Roboto font path
 $roboto-font-path: '../assets/';
-
 // Custom color settings go here
 $primary-color: color("blue-grey", "lighten-1");
 $secondary-color: color("pink", "accent-4");
-
 @import 'components/variables';
 @import 'materialize';
 @import 'ember-cli-materialize';
 
 nav {
-    background-image: url("/images/logo.png");
-    background-repeat: no-repeat;
-    background-size: auto 64px;
-    background-position: 50px 0;
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: auto 64px;
+  background-position: 50px 0;
 }
 
 .frame-wrapper {
-    & {
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0;
-        margin: 0;
-        border: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+  .iframe-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -4px;
+    border: none;
+
+    &.hidden {
+      display: none;
     }
 
     iframe {
-        position: relative;
         width: 100%;
         height: 100%;
         margin-bottom: -4px;
         border: none;
     }
+  }
+
 
 }
