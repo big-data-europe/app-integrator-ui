@@ -2,5 +2,19 @@
   "name": "bde-integrator-user-interface",
   "dependencies": {
     "materialize": "0.97.6"
-  }
+  },
+  "homepage": "https://github.com/big-data-europe/app-integrator-ui",
+  "authors": [
+    "Nóra Szepes <nora.szepes@tenforce.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

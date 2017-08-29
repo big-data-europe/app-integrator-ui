@@ -1,9 +1,11 @@
 /* eslint-env node */
+'use strict';
+
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const nodeSass = require('node-sass'); // loads the version in your package.json
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  let app = new EmberApp(defaults, {
     // Add options here
     sassOptions: {
       includePaths: [
