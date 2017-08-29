@@ -14,9 +14,7 @@
     "start": "ember server",
     "test": "ember test"
   },
-  "repository": "",
   "devDependencies": {
-    "adm-zip": "^0.4.7",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.14.2",
@@ -55,5 +53,8 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "archiver": "^2.0.3"
+  }
 }
