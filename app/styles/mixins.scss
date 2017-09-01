@@ -1,0 +1,76 @@
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    #{$property}: #{$value};
+}
+
+@mixin border-radius($radius: 5px) {
+    @include css3-prefix('border-radius', $radius);
+}
+
+@mixin box-shadow($shadow...) {
+    @include css3-prefix('box-shadow', $shadow);
+}
+
+@mixin box-sizing($type: border-box) {
+    @include css3-prefix('box-sizing', $type);
+}
+
+@mixin opacity($opacity: 0.5) {
+    $opacityMultiplied: ($opacity * 100);
+    filter: alpha(opacity=$opacityMultiplied);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")";
+    @include css3-prefix('opacity', $opacity);
+}
+
+@mixin transform($params) {
+    @include css3-prefix('transform', $params);
+}
+
+@mixin transform-origin($params) {
+    @include css3-prefix('transform-origin', $params);
+}
+
+@mixin transition($properties...) {
+    @if length($properties) >= 1 {
+        @include css3-prefix('transition', $properties);
+    } @else {
+        @include css3-prefix('transition', "all 0.2s ease-in-out 0s");
+    }
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    @include css3-prefix('animation', $str);
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

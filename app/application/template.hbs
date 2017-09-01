@@ -1,16 +1,15 @@
 {{#md-navbar name='Dashboard' }}
-  {{#each model as |ui|}}
-    <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui}}>
+  {{#each model as |ui index|}}
+    <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui index}}>
       <a>{{ui.label}}</a>
     </li>
   {{/each}}
 {{/md-navbar}}
 
-
 {{#if activeUi}}
   <div class="frame-wrapper">
     {{#each model as |ui|}}
-      {{render-ui activeUi=activeUi ui=ui}}
+      {{render-ui activeUi=activeUi ui=ui classes=directionClass}}
     {{/each}}
   </div>
 {{else}}
