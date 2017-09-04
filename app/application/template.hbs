@@ -4,8 +4,9 @@
       <a>{{ui.label}}</a>
     </li>
   {{/each}}
-{{/md-navbar}}
+  {{#link-to "ember-stack-builder-engine" tagName="li"}}Stack builder{{/link-to}}
 
+{{/md-navbar}}
 {{render-ui activeUi=activeUi appendPath=appendPath}}
 
 {{outlet}}

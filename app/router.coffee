@@ -5,6 +5,6 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-
+  @mount('ember-stack-builder-engine', { path: '/stack-builder' });
 
 `export default Router`
