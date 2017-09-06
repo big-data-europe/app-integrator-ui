@@ -6,5 +6,6 @@ Router = Ember.Router.extend
 
 Router.map ->
   @mount('ember-stack-builder-engine', { path: '/stack-builder' });
+  @mount('ember-swarm-ui-engine', { path: '/swarm-ui' });
 
 `export default Router`

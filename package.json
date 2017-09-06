@@ -19,6 +19,7 @@
     "adm-zip": "^0.4.7",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
+    "ember-browserify": "1.1.13",
     "ember-cli": "2.12.2",
     "ember-cli-app-version": "^2.0.0",
     "ember-cli-babel": "^5.1.7",
@@ -45,13 +46,14 @@
     "ember-promise-helpers": "1.0.2",
     "ember-radio-button": "^1.0.7",
     "ember-resolver": "^2.0.3",
-    "ember-stack-builder-engine": "https://github.com/big-data-europe/ember-stack-builder-engine.git#v0.0.1",
+    "ember-stack-builder-engine": "https://github.com/big-data-europe/ember-stack-builder-engine.git#v0.3.1",
     "ember-truth-helpers": "^1.2.0",
     "ember-welcome-page": "^1.0.3",
     "install": "0.8.7",
     "js-yaml": "^3.8.3",
     "loader.js": "^4.0.10",
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.4.2",
+    "ember-swarm-ui-engine": "git@github.com:big-data-europe/ember-swarm-ui-engine.git#v1.0.1"
   },
   "dependencies": {
     "ember-engines": "0.5.4"

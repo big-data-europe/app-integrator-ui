@@ -18,6 +18,13 @@ App = Ember.Application.extend({
           'store'
         ]
       }
+    },
+    emberSwarmUiEngine: {
+      dependencies: {
+        services: [
+          'store'
+        ]
+      }
     }
   }
 });
