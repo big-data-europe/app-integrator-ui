@@ -25,6 +25,13 @@ App = Ember.Application.extend({
           'store'
         ]
       }
+    },
+    emberPipelineBuilderEngine: {
+      dependencies: {
+        services: [
+          'store'
+        ]
+      }
     }
   }
 });
