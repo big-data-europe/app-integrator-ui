@@ -1,15 +1,16 @@
 {{#md-navbar name='Dashboard'}}
-  {{#each model as |ui|}}
-    <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui}}>
-      <a>{{ui.label}}</a>
+  <ul>
+    <li>
+      {{#link-to "ember-stack-builder-engine" tagName="a"}}Stack builder{{/link-to}}
     </li>
-  {{/each}}
-  {{#link-to "ember-stack-builder-engine" tagName="li"}}Stack builder{{/link-to}}
-  {{#link-to "ember-swarm-ui-engine" tagName="li"}}Swarm UI{{/link-to}}
-  {{#link-to "ember-pipeline-builder-engine" tagName="li"}}Workflow builder{{/link-to}}
-
+    <li>
+      {{#link-to "ember-swarm-ui-engine" tagName="a"}}Swarm UI{{/link-to}}
+    </li>
+    <li>
+      {{#link-to "ember-pipeline-builder-engine" tagName="a"}}Workflow builder{{/link-to}}
+    </li>
+  </ul>
 {{/md-navbar}}
-{{render-ui activeUi=activeUi appendPath=appendPath}}
 
 {{outlet}}
 
