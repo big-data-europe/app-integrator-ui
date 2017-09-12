@@ -11,6 +11,14 @@ $secondary-color: color("pink", "accent-4");
 @import 'materialize';
 @import 'ember-cli-materialize';
 
+
+// Stack Builder styles
+@import 'app/styles/compact.scss';
+@import 'app/styles/default.scss';
+@import 'app/styles/editor.scss';
+@import 'app/styles/index.scss';
+
+
 nav {
     background-image: url("/images/logo.png");
     background-repeat: no-repeat;
