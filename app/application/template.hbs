@@ -19,9 +19,7 @@
 {{#if activeUi}}
   <div class="frame-wrapper">
     {{#each model as |ui|}}
-      {{#if (eq ui.engine false)}}
-        {{render-ui activeUi=activeUi ui=ui classes=(concat directionClass " " ui.repoName)}}
-      {{/if}}
+      {{render-ui activeUi=activeUi ui=ui classes=(concat directionClass " " ui.repoName)}}
     {{/each}}
   </div>
 {{else}}
@@ -30,7 +28,5 @@
     <p>To get started select one of the items in the header.</p>
   </div>
 {{/if}}
-
-{{outlet}}
 
 {{md-modal-container}}

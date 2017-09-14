@@ -1,1 +1,5 @@
-<iframe src="{{frameUrl}}"></iframe>
+{{#if (eq ui.engine false)}}
+  <iframe src="{{frameUrl}}"></iframe>
+{{else}}
+  {{outlet}}
+{{/if}}
