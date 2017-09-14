@@ -7,58 +7,11 @@ $secondary-color: color("pink", "accent-4");
 @import 'materialize';
 @import 'ember-cli-materialize';
 @import 'mixins';
+@import 'default';
 
-html {
-  overflow-x: hidden;
-}
 
 
 // Stack Builder styles
-@import 'app/styles/compact.scss';
-@import 'app/styles/default.scss';
-@import 'app/styles/editor.scss';
-@import 'app/styles/index.scss';
-
-
-nav {
-  background-image: url("/images/logo.png");
-  background-repeat: no-repeat;
-  background-size: auto 64px;
-  background-position: 50px 0;
-  box-shadow: none;
-}
-
-.frame-wrapper {
-  position: absolute;
-  top: 64px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0;
-  margin: 0;
-  border: none;
-
-  .iframe-view {
-    position: relative;
-    border: none;
-    margin-bottom: -4px;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    @include transition(opacity 0.75s ease-in-out);
-
-    &.hidden {
-      width: 0%;
-      height: 0%;
-      margin-bottom: 0;
-      opacity: 0;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      margin-bottom: -4px;
-      border: none;
-    }
-  }
+.ember-stack-builder-engine {
+  @import 'stack-builder/app.scss';
 }
