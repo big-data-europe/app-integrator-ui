@@ -2,10 +2,10 @@
   {{#each model as |ui index|}}
 
     {{#if (eq ui.engine true)}}
-      {{#link-to "ember-stack-builder-engine" tagName="a" invokeAction=(action 'selectUi' ui index 'engine')}}
+      {{#link-to ui.repoName tagName="a" invokeAction=(action 'selectUi' ui index 'engine')}}
         {{ui.label}}
       {{/link-to}}
-    
+
     {{else}}
       <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui index 'iframe'}}>
         <a>{{ui.label}}</a>
@@ -26,7 +26,7 @@
     <p>To get started select one of the items in the header.</p>
   </div>
 {{/if}}
- 
+
 {{outlet}}
 
 {{md-modal-container}}
