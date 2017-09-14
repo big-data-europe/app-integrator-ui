@@ -1,0 +1,136 @@
+.list {
+  .container {
+    h1 {
+      text-align: center;
+    }
+
+    .text {
+      span {
+        font-weight: 600;
+
+        &.clickable {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .item--list {
+      .row {
+        padding-left: 2%;
+      }
+
+      .create-selector {
+        .type-label {
+          font-size: 1rem;
+          padding: 0 0 1% 1%;
+        }
+
+        .md-radios {
+          padding-top: 1%;
+
+          .materialize-selectable-item {
+            display: inline-block;
+
+            &:not(:first-child) {
+              margin-left: 5%;
+            }
+          }
+        }
+      }
+
+      .create {
+        .input-required {
+          label {
+            color: red;
+          }
+
+          input {
+            border-bottom-color: red;
+          }
+        }
+
+        .input-field {
+          width: 90%;
+        }
+
+        .icon-editor {
+          display: inline-block;
+          width: 90%;
+
+          .input-field {
+            width: 100%;
+            margin-right: 1%;
+          }
+        }
+      }
+
+      .docker-search {
+        label {
+          font-size: 1rem;
+          padding-left: 1%;
+        }
+
+        .docker-compose-search {
+          width: 90%;
+          padding: 1.1% 0;
+
+          .ember-basic-dropdown-content {
+            .ember-power-select-search {
+              input {
+                padding: 0 10%;
+              }
+            }
+          }
+        }
+
+        .input-required {
+          .docker-compose-search {
+            .ember-power-select-trigger {
+              border-color: red;
+            }
+          }
+        }
+      }
+    }
+
+    .repositories--show {
+      h3 {
+        text-align: center;
+      }
+
+      .delete {
+        display: inline-block;
+        float: right;
+        margin-right: 10%;
+      }
+
+      .row {
+        padding-left: 2%;
+      }
+
+      .input-required {
+        label {
+          color: red;
+        }
+
+        input {
+          border-bottom-color: red;
+        }
+      }
+
+      .input-field {
+        width: 90%;
+      }
+
+      .icon-editor {
+        display: inline-block;
+        width: 90%;
+
+        .input-field {
+          width: 100%;
+          margin-right: 1%;
+        }
+      }
+    }
+  }
+}

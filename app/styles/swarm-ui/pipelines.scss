@@ -1,0 +1,74 @@
+.pipelines {
+  .container {
+    h1 {
+      text-align: center;
+    }
+
+    .text {
+      span {
+        font-weight: 600;
+
+        &.clickable {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .pipeline--list {
+      .service-list {
+        margin-left: 5%;
+
+        li {
+          list-style-type: circle;
+          margin-top: 1%;
+        }
+      }
+    }
+  }
+
+  .pipelines--show {
+      .services {
+        .service {
+          margin: 0 5%;
+
+          .log-container {
+            position: relative;
+            margin: 3% 5% 5% 5%;
+
+            .btn {
+              top: 10%;
+              right: 25px;
+              position: absolute;
+            }
+
+            .logs {
+              white-space: pre-line;
+              padding: 15px;
+              border: solid 2px #555;
+              border-radius: 5px;
+              background-color: #222;
+              color: #AAA;
+              overflow: scroll;
+              min-height: 3em;
+              max-height: 22em;
+            }
+          }
+        }
+      }
+
+      .actions {
+        display: inline-block;
+        margin-left: -1%;
+      }
+
+      .delete {
+        display: inline-block;
+        float: right;
+      }
+
+      .update {
+        display: inline;
+        float: right;
+      }
+  }
+}

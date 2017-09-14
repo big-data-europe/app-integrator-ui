@@ -2,10 +2,6 @@ html {
   overflow-x: hidden;
 }
 
-nav {
-  background-image: none;
-}
-
 .integrator-ui {
   nav {
     background-image: url("/images/logo.png");
@@ -13,6 +9,15 @@ nav {
     background-size: auto 64px;
     background-position: 50px 0;
     box-shadow: none;
+
+    ul {
+      li, a {
+        cursor: pointer;
+        &:hover {
+          background-color: #546e7a;
+        }
+      }
+    }
   }
 }
 

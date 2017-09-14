@@ -1,0 +1,35 @@
+
+img {
+  &.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+}
+// awful hack to show the img in the collapsible header in one row with the text
+
+.collapsible-header {
+  .ember-view {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+    img {
+      margin-top: 10px;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+.row {
+  &.icon {
+    .ember-view {
+      display: inline-block;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: -10px;
+    }
+  }
+}

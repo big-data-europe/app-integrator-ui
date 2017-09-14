@@ -1,0 +1,11 @@
+// // import basic things
+// $primary-color: color("blue-grey", "lighten-1");
+// $secondary-color: color("pink", "accent-4");
+// @import "ember-power-select";
+
+// import default style and styles for pages
+@import 'default.scss';
+@import 'pipelines.scss';
+@import 'index.scss';
+@import 'smart-icon.scss';
+@import 'list-manager.scss';

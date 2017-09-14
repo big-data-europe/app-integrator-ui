@@ -3,8 +3,8 @@
     {{#each model as |ui index|}}
 
       {{#if (eq ui.engine true)}}
-        {{#link-to ui.repoName tagName="a" invokeAction=(action 'selectUi' ui index 'engine')}}
-          {{ui.label}}
+        {{#link-to ui.repoName tagName="li" invokeAction=(action 'selectUi' ui index 'engine')}}
+          <a>{{ui.label}}</a>
         {{/link-to}}
 
       {{else}}

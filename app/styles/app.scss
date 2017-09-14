@@ -9,9 +9,12 @@ $secondary-color: color("pink", "accent-4");
 @import 'mixins';
 @import 'default';
 
-
-
 // Stack Builder styles
 .ember-stack-builder-engine {
   @import 'stack-builder/app.scss';
+}
+
+// Swarm UI styles
+.ember-swarm-ui-engine {
+  @import 'swarm-ui/app.scss';
 }
