@@ -1,0 +1,79 @@
+nav {
+
+  ul {
+    cursor: pointer;
+
+    li {
+      cursor: pointer;
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+a.button-collapse {
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.modal {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.preloader-wrapper {
+  .spinner-layer {
+    border-color: $primary-color;
+
+    &.spinner-green,
+    &.spinner-yellow {
+      border-color: $secondary-color;
+    }
+  }
+}
+
+html {
+  overflow: scroll;
+}
+
+
+#autocomplete-textarea {
+  min-height: 80px;
+  color: #000;
+}
+#autocomplete-textarea a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #181818;
+}
+.dropdown-menu .textcomplete-item a,
+.dropdown-menu .textcomplete-item a:hover {
+  cursor: pointer;
+  font-weight: normal;
+  color: #000;
+  position: relative;
+  padding: 3px 10px;
+}
+.dropdown-menu .textcomplete-item.active a {
+  background: #A8B0C0;
+}
+
+.textcomplete-dropdown {
+  border: 1px solid;
+  background: #D7D2D2;
+}
+
+/* Highlighting of the matching part
+   of each search result */
+.dropdown-menu .textcomplete-item a em {
+  font-style: normal;
+  font-weight: bold;
+}
+.dropdown-menu .textcomplete-footer {
+  border-top: solid 1px #F0F0F0;
+  margin-top: 3px;
+}
