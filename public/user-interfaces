@@ -1,0 +1,47 @@
+{ "data": [
+  {
+    "id": 1,
+    "type": "user-interfaces",
+    "attributes": {
+      "engine": true,
+      "repo-name": "ember-stack-builder-engine",
+      "label": "Stack Builder",
+      "base-url": "",
+      "append-path": ""
+    }
+  },
+  {
+    "id": 2,
+    "type": "user-interfaces",
+    "attributes": {
+      "engine": false,
+      "repo-name": "workflow-builder",
+      "label": "Workflow Builder",
+      "base-url": "http://workflow-builder.big-data-europe.aksw.org/",
+      "append-path": ""
+    }
+  },
+  {
+    "id": 3,
+    "type": "user-interfaces",
+    "attributes": {
+      "engine": false,
+      "repo-name": "swarm-ui",
+      "label": "Swarm UI",
+      "base-url": "http://swarm-ui.big-data-europe.aksw.org/",
+      "append-path": ""
+    }
+  },
+  {
+    "id": 4,
+    "type": "user-interfaces",
+    "attributes": {
+      "engine": false,
+      "repo-name": "http-logger",
+      "label": "NetLog",
+      "base-url": "http://kibana.big-data-europe.aksw.org/",
+      "append-path": ""
+    }
+  }
+]
+}
