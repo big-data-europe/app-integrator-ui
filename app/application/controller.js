@@ -13,7 +13,17 @@ const ApplicationController = Ember.Controller.extend({
   directionClass: 'left',
 
   actions: {
-    selectUi(ui, index) {
+    selectUi(ui, index, type) {
+
+      if (type === 'engine') {
+        Ember.$('.iframe-view').each(function(key, value) {
+          let iframeClasses = $(this).attr('class');
+          if (iframeClasses.indexOf('active') !== -1) {
+            $(this).addClass('hidden').removeClass('active');
+          }
+        });
+      } 
+
       if (this.get('activeId') == ui.get('id')) {
         return;
       }
@@ -29,6 +39,9 @@ const ApplicationController = Ember.Controller.extend({
       this.set('appendPath', ui.get('appendPath'));
       this.set('activeId', ui.get('id'));
 
+      if (type === 'iframe') {
+        this.transitionToRoute('application');
+      }
     }
   }
 });

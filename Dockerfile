@@ -1,20 +1,16 @@
-FROM nginx:1
+FROM madnificent/ember:2.14.0 as ember
 
+MAINTAINER Esteban Sastre <esteban.sastre@tenforce.com>
 MAINTAINER Aad Versteden <madnificent@gmail.com>
 
-COPY package.json /package.json
+COPY . /app
 COPY user-interfaces /user-interfaces
+RUN npm install && bower install
+RUN npm rebuild node-sass
+RUN ember build
 
-RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get install -y unzip wget \
-    && ln -s /usr/share/nginx/html /app \
-    && mkdir /app/config \
-    && mv /user-interfaces /app/config/ \
-    && cd /app \
-    && wget https://github.com/big-data-europe/app-integrator-ui/releases/download/v$(cat /package.json | grep version | head -n 1 | awk -F: '{ print $2 }' | sed 's/[ ",]//g')/dist.zip \
-    && cd /app \
-    && unzip dist.zip \
-    && mv dist/* . \
-    && ln -s /app/config/user-interfaces /app/user-interfaces \
-    && rm /app/dist.zip /package.json
+FROM nginx:1
+RUN ln -s /usr/share/nginx/html /app && \
+    ln -s /app/config/user-interfaces /app/user-interfaces
+COPY --from=ember /app/dist /app
+COPY --from=ember /user-interfaces /app/config/user-interfaces

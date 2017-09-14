@@ -6,7 +6,30 @@ import config from './config/environment';
 const App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+  engines: {
+    emberStackBuilderEngine: {
+      dependencies: {
+        services: [
+          'store'
+        ]
+      }
+    },
+    emberSwarmUiEngine: {
+      dependencies: {
+        services: [
+          'store'
+        ]
+      }
+    },
+    emberPipelineBuilderEngine: {
+      dependencies: {
+        services: [
+          'store'
+        ]
+      }
+    }
+  }
 });
 
 loadInitializers(App, config.modulePrefix);

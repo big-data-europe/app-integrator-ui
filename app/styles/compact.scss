@@ -1,0 +1,50 @@
+.compact {
+  .container {
+    h1 {
+      text-align: center;
+    }
+
+    .search {
+      i {
+        margin-left: 1%;
+        font-size: 24px;
+        color: $secondary-color;
+        display: inline-block;
+      }
+
+      input {
+        display: inline-block;
+        width: 95%;
+      }
+    }
+    .preloader-wrapper {
+      margin-left: 50%;
+    }
+
+    ul.collection {
+      li.collection-item {
+        &:hover {
+          cursor: pointer;
+          background: #ddd;
+        }
+
+        &.empty-text {
+          font-style: italic;
+        }
+      }
+    }
+
+    .floating-btn {
+      float: right;
+
+      a {
+        background-color: $secondary-color;
+
+        &:hover {
+          background-color: $primary-color;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

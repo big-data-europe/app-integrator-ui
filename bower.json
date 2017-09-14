@@ -1,11 +1,16 @@
 {
   "name": "bde-integrator-user-interface",
   "dependencies": {
-    "materialize": "0.97.6"
+    "materialize": "0.97.6",
+    "ember": "~2.12.2",
+    "ember-cli-shims": "0.1.3",
+    "jquery-textcomplete": "^1.8.0",
+    "FileSaver": "^1.3.3"
   },
   "homepage": "https://github.com/big-data-europe/app-integrator-ui",
   "authors": [
-    "Nóra Szepes <nora.szepes@tenforce.com>"
+    "Nóra Szepes <nora.szepes@tenforce.com>",
+    "Esteban Sastre <esteban.sastre@tenforce.com>"
   ],
   "description": "",
   "main": "",

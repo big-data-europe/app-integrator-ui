@@ -1,15 +1,23 @@
 {{#md-navbar name='Dashboard' }}
   {{#each model as |ui index|}}
-    <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui index}}>
-      <a>{{ui.label}}</a>
-    </li>
+
+    {{#if (eq ui.engine true)}}
+      {{#link-to "ember-stack-builder-engine" tagName="a" invokeAction=(action 'selectUi' ui index 'engine')}}
+        {{ui.label}}
+      {{/link-to}}
+    
+    {{else}}
+      <li class="{{if (eq ui.id activeId) 'active'}}" {{action "selectUi" ui index 'iframe'}}>
+        <a>{{ui.label}}</a>
+      </li>
+    {{/if}}
   {{/each}}
 {{/md-navbar}}
 
 {{#if activeUi}}
   <div class="frame-wrapper">
     {{#each model as |ui|}}
-      {{render-ui activeUi=activeUi ui=ui classes=directionClass}}
+      {{render-ui activeUi=activeUi ui=ui classes=(concat directionClass " " ui.repoName)}}
     {{/each}}
   </div>
 {{else}}
@@ -18,6 +26,7 @@
     <p>To get started select one of the items in the header.</p>
   </div>
 {{/if}}
+ 
+{{outlet}}
 
-
-{{outlet}} {{md-modal-container}}
+{{md-modal-container}}

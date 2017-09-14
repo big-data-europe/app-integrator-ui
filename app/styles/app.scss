@@ -12,6 +12,14 @@ html {
   overflow-x: hidden;
 }
 
+
+// Stack Builder styles
+@import 'app/styles/compact.scss';
+@import 'app/styles/default.scss';
+@import 'app/styles/editor.scss';
+@import 'app/styles/index.scss';
+
+
 nav {
   background-image: url("/images/logo.png");
   background-repeat: no-repeat;
@@ -41,7 +49,7 @@ nav {
 
     &.hidden {
       width: 0%;
-      heigth: 0%;
+      height: 0%;
       margin-bottom: 0;
       opacity: 0;
     }
