@@ -32,6 +32,21 @@ html {
   border: none;
   z-index: -1;
 
+  .engine-view {
+    position: relative;
+    border: none;
+    margin-bottom: -4px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    @include transition(display 0.75s ease-in-out);
+
+    &.hidden {
+      display: none;
+      opacity: 0;
+    }
+  }
+
   .iframe-view {
     position: relative;
     border: none;
@@ -41,18 +56,21 @@ html {
     height: 100%;
     @include transition(opacity 0.75s ease-in-out);
 
-    &.hidden {
-      width: 0;
-      height: 0;
-      margin-bottom: 0;
-      opacity: 0;
-    }
-
     iframe {
       width: 100%;
       height: 100%;
       margin-bottom: -4px;
       border: none;
+    }
+
+    &.hidden {
+      width: 0;
+      height: 0;
+      opacity: 0;
+      iframe {
+        margin-bottom: -4px;
+        border: none;
+      }
     }
   }
 }

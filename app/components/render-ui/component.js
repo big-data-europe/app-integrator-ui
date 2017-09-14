@@ -2,7 +2,12 @@ import Ember from 'ember';
 
 const RenderUiComponent = Ember.Component.extend({
   classNameBindings: ['mainClass', 'classes', 'isHidden:hidden', 'isActive:active'],
-  mainClass: 'iframe-view',
+  mainClass: Ember.computed('ui', function(){
+    if (this.get('ui.engine') === true){
+      return 'engine-view';
+    }
+    return 'iframe-view';
+  }),
   frameUrl: Ember.computed('ui', function() {
     return this.get('ui.baseUrl') + this.get('ui.appendPath');
   }),
