@@ -23,3 +23,6 @@ dist.zip
 .node_modules.ember-try/
 bower.json.ember-try
 package.json.ember-try
+
+
+public/user-interfaces
