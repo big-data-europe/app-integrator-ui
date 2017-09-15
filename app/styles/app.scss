@@ -1,13 +1,21 @@
 // Example app.scss
 @import 'components/color'; // Fix for Roboto font path
+
 $roboto-font-path: '../assets/'; // Custom color settings go here
 $primary-color: color("blue-grey", "lighten-1");
 $secondary-color: color("pink", "accent-4");
+
+// Pipeline builder variables.
+$card-link-color: $secondary-color !default;
+$card-link-color-light: lighten($secondary-color, 20%) !default;
+
+
 @import 'components/variables';
 @import 'materialize';
 @import 'ember-cli-materialize';
 @import 'mixins';
 @import 'default';
+@import 'ember-cli-loading-slider/default';
 
 // Stack Builder styles
 .ember-stack-builder-engine {
@@ -17,4 +25,9 @@ $secondary-color: color("pink", "accent-4");
 // Swarm UI styles
 .ember-swarm-ui-engine {
   @import 'swarm-ui/app.scss';
+}
+
+// Pipeline Builder styles
+.ember-pipeline-builder-engine {
+  @import 'pipeline-builder/app.scss';
 }
