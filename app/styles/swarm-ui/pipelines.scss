@@ -31,6 +31,12 @@
         .service {
           margin: 0 5%;
 
+          .row {
+            .col {
+              margin-left: 2%;
+            }
+          }
+
           .log-container {
             position: relative;
             margin: 3% 5% 5% 5%;
@@ -64,6 +70,7 @@
       .delete {
         display: inline-block;
         float: right;
+        margin-left: 1%;
       }
 
       .update {
