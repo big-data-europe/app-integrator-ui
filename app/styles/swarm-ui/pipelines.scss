@@ -33,7 +33,19 @@
 
           .row {
             .col {
-              margin-left: 2%;
+              margin-right: 2%;
+
+              &.scaling {
+                width: fit-content;
+                .btn {
+                  display: inline-block;
+                }
+
+              }
+
+              &.log {
+                margin-left: 4%;
+              }
             }
           }
 
