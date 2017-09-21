@@ -16,6 +16,7 @@ $card-link-color-light: lighten($secondary-color, 20%) !default;
 @import 'mixins';
 @import 'default';
 @import 'ember-cli-loading-slider/default';
+@import "ember-power-select";
 
 // Stack Builder styles
 .ember-stack-builder-engine {

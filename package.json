@@ -43,6 +43,7 @@
     "ember-materialize-shim": "^0.4.2",
     "ember-new-computed": "^1.0.3",
     "ember-pipeline-builder-engine": "https://github.com/big-data-europe/ember-pipeline-builder-engine.git#v1.1.1",
+    "ember-power-select": "^1.9.6",
     "ember-promise-helpers": "1.0.3",
     "ember-radio-button": "https://github.com/lordblendi/ember-radio-button.git#ember-engine-fix2",
     "ember-resolver": "^4.5.0",
