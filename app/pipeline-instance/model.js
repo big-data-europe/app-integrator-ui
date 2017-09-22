@@ -8,9 +8,6 @@ export default DS.Model.extend({
   updateRequested: attr('string'),
   status: DS.belongsTo('status'),
   requestedStatus: DS.belongsTo('status'),
-  repository: DS.belongsTo('repository', {
-    inverse: 'pipelineInstances'
-  }),
   stack: DS.belongsTo('stack', {
     inverse: 'pipelineInstances'
   }),

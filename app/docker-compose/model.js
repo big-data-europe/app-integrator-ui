@@ -20,6 +20,10 @@ export default DS.Model.extend(DockerFileParser, {
 
   getServiceDetails: function(servicename) {
     return this.getService(this.get('yaml'), servicename);
-  }
+  },
+  
+  stacks: DS.hasMany('stack', {
+    inverse: 'dockerFile'
+  })
 
 });
