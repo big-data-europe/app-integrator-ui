@@ -110,6 +110,12 @@
 
       .row {
         padding-left: 2%;
+
+        .text {
+          span {
+            font-style: bold;
+          }
+        }
       }
 
       .input-required {

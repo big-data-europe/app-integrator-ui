@@ -21,6 +21,19 @@ html {
   }
 }
 
+.ember-modal-dialog {
+  .modal-content {
+    font-size: 18px;
+
+  }
+
+  .modal-footer {
+    .btn {
+      margin-left: 1%;
+    }
+  }
+}
+
 .frame-wrapper {
   position: absolute;
   top: 64px;
