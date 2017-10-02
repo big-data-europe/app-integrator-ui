@@ -18,6 +18,14 @@ $card-link-color-light: lighten($secondary-color, 20%) !default;
 @import 'ember-cli-loading-slider/default';
 @import "ember-power-select";
 
+
+.frame-wrapper {
+  nav {
+    background-color: $secondary-color
+  }
+}
+
+
 // Stack Builder styles
 .ember-stack-builder-engine {
   @import 'stack-builder/app.scss';
