@@ -41,11 +41,18 @@ html {
 }
 
 
-#autocomplete-textarea {
-  min-height: 80px;
+textarea, #autocomplete-textarea, .textarea-autocomplete {
+  min-height: 200px;
+  height: 200px;
   color: #000;
 }
 #autocomplete-textarea a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #181818;
+}
+
+.textarea-autocomplete a {
   text-decoration: none;
   font-weight: normal;
   color: #181818;
