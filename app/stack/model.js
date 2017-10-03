@@ -11,6 +11,6 @@ export default DS.Model.extend({
     return this.get('pipelineInstances.length');
   }),
   dockerFile: DS.belongsTo('docker-compose', {
-    inverse: 'stacks'
+    inverse: 'relatedStacks'
   })
 });

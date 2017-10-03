@@ -22,7 +22,7 @@ export default DS.Model.extend(DockerFileParser, {
     return this.getService(this.get('yaml'), servicename);
   },
   
-  stacks: DS.hasMany('stack', {
+  relatedStacks: DS.hasMany('stack', {
     inverse: 'dockerFile'
   })
 
