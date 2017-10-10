@@ -2,12 +2,18 @@
     cursor: pointer;
 }
 
-// nav {
-    // background-image: url("/images/logo.png");
-    // background-repeat: no-repeat;
-    // background-size: auto 64px;
-    // background-position: 50px 0;
-// }
+.container {
+    h1 {
+        text-align: center;
+    }
+}
+
+h5 {
+    color: #9e9e9e;
+    font-style: italic;
+    font-weight: 300;
+}
+
 
 .card {
 
