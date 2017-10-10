@@ -11,9 +11,10 @@ const Pipeline = DS.Model.extend(HasManyQuery.ModelMixin, {
         size: 10000
       }
     }
-  }
-  )
-}
-);
+  }),
+  dockerFile: DS.belongsTo('docker-compose', {
+    inverse: 'relatedWorkflows'
+  })
+});
 
 export default Pipeline;

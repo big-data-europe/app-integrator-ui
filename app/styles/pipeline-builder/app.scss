@@ -44,6 +44,35 @@ h5 {
 	color: color("grey", "base");
     }
 
+    .card-content {
+        .row {
+            padding-left: 1%;
+        }
+
+        .ember-inline-edit {
+            width: 60%;
+        }
+    }
+
+}
+
+.ember-inline-edit {
+    textarea {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #9e9e9e;
+
+        &:focus {
+            border-bottom: 1px solid #c51162;
+            box-shadow: 0 1px 0 0 #c51162;
+            resize: none;
+        }
+
+    }
+}
+
+.docker-compose-search {
+    width: 60%;
 }
 
 /** ember-cli-loading-slider */
