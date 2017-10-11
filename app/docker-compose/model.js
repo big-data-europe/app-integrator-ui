@@ -25,7 +25,7 @@ export default DS.Model.extend(DockerFileParser, {
   relatedStacks: DS.hasMany('stack', {
     inverse: 'dockerFile'
   }),
-  relatedWorkflows: DS.hasMany('pipeline', {
+  relatedWorkflows: DS.belongsTo('pipeline', {
     inverse: 'dockerFile'
   })
 

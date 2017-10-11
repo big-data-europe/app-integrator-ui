@@ -15,6 +15,14 @@ h5 {
 }
 
 
+.docker-compose-search {
+    width: 60%;
+    margin-bottom: 1%;
+    .ember-power-select-trigger {
+        height: 30px;
+    }
+}
+
 .card {
 
     .badge {
@@ -49,6 +57,10 @@ h5 {
             padding-left: 1%;
         }
 
+        .docker-compose-search {
+            margin-bottom: 0;
+        }
+
         .ember-inline-edit {
             width: 60%;
         }
@@ -71,9 +83,7 @@ h5 {
     }
 }
 
-.docker-compose-search {
-    width: 60%;
-}
+
 
 /** ember-cli-loading-slider */
 .loading-slider > span {

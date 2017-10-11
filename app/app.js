@@ -14,7 +14,8 @@ const App = Ember.Application.extend({
           'store'
         ],
         externalRoutes: {
-          swarmUiList: 'ember-swarm-ui-engine.list'
+          swarmUiList: 'ember-swarm-ui-engine.list',
+          workflow: 'ember-pipeline-builder-engine.steps'
         }
       }
     },
@@ -32,7 +33,10 @@ const App = Ember.Application.extend({
       dependencies: {
         services: [
           'store'
-        ]
+        ],
+        externalRoutes: {
+          stack: 'ember-stack-builder-engine.editor.edit'
+        }
       }
     }
   }
