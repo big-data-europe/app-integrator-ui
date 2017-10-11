@@ -77,7 +77,16 @@
           margin-top: 2%;
           border: 1px solid #ddd;
           .collection-item {
-            color: black;
+
+            &:not(.pink-text){
+              color: black;
+            }
+
+            &.pink-text {
+              &:hover {
+                background: white;
+              }
+            }
 
             &:not(:last-child){
               border-bottom: 1px solid #ddd;
