@@ -32,7 +32,9 @@ const App = Ember.Application.extend({
     emberPipelineBuilderEngine: {
       dependencies: {
         services: [
-          'store'
+          'store',
+          'notify',
+          '-document'
         ],
         externalRoutes: {
           stack: 'ember-stack-builder-engine.editor.edit'

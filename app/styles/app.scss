@@ -45,3 +45,27 @@ $card-link-color-light: lighten($secondary-color, 20%) !default;
 .ember-pipeline-builder-engine {
     @import 'pipeline-builder/app.scss';
 }
+
+.ember-notify-default.ember-notify-cn {
+    z-index: 9999999;
+}
+.ember-notify.error {
+    background-color: pink;
+    color: red;
+    border: solid 1px red;
+}
+.ember-notify.success   {
+    background-color: lightgreen;
+    color: green;
+    border: solid 1px green;
+}
+.ember-notify.warning   {
+    background-color: #ffefc0;
+    color: orange;
+    border: solid 1px orange;
+}
+.ember-notify.info   {
+    background-color: royalblue;
+    color: white;
+    border: solid 1px white;
+}

@@ -27,6 +27,8 @@ export default DS.Model.extend(DockerFileParser, {
   }),
   relatedWorkflows: DS.belongsTo('pipeline', {
     inverse: 'dockerFile'
-  })
+  }),
+
+  dockerServices: DS.hasMany('docker-service')
 
 });
