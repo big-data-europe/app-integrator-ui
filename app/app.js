@@ -22,7 +22,8 @@ const App = Ember.Application.extend({
     emberSwarmUiEngine: {
       dependencies: {
         services: [
-          'store'
+          'store',
+          '-document'
         ],
         externalRoutes: {
           stack: 'ember-stack-builder-engine.editor.edit'
