@@ -1,5 +1,7 @@
 .pipelines {
     .container {
+      max-width: unset;
+      width: 95%;
         h1 {
             text-align: center;
         }
@@ -13,13 +15,15 @@
         }
         .pipeline--list {
             .service-list {
-                margin-left: 5%;
                 li {
                     list-style-type: circle;
                     margin-top: 1%;
+
                 }
+
             }
         }
+
     }
     .pipelines--show {
         .info-status {
@@ -37,7 +41,7 @@
               margin-right: 15%;
             }
             .service {
-                margin: 0 1%;
+                // margin: 0 1%;
                 .row {
                     .col {
                         &.scaling {
@@ -46,8 +50,25 @@
                                 display: inline-block;
                             }
                         }
-                        &.log {
-                            margin-left: 4%;
+                        // &.log {
+                        //     margin-left: 4%;
+                        // }
+                        .materialize-checkbox {
+                          display: inline-block;
+                        }
+                        .stats {
+                          display: inline-block;
+                          width: fit-content;
+                          strong {
+                            font-weight: 600;
+                            white-space: pre-wrap;
+                          }
+                          span {
+                            padding-right: 1%;
+                            &::after {
+                              // content: '-';
+                            }
+                          }
                         }
                     }
                 }
