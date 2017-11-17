@@ -1,3 +1,18 @@
+.progress-bar {
+  z-index: 100;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .progress {
+    position: absolute;
+    top: -8px;
+  }
+}
+
 // Hack to remove the green validation colors
 
 input:not([type]).valid,
