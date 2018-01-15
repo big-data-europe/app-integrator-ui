@@ -1,0 +1,27 @@
+a[data-ember-action] {
+    cursor: pointer;
+}
+
+nav {
+    background-color: $secondary-color;
+}
+
+.card {
+
+    .badge {
+	background-color: $badge-bg-color;
+	color: white;
+	top: 15px;
+    }
+
+    i.status-icon {
+      background-color: $primary-color;
+      color: white;
+      cursor: help;
+    }
+
+    .card-action a:not(.btn):not(.btn-large):not(.btn-floating).disabled {
+	color: color("grey", "base");
+	cursor: default;
+    }
+}

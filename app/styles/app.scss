@@ -45,3 +45,8 @@ $card-link-color-light: lighten($secondary-color, 20%) !default;
 .ember-pipeline-builder-engine {
     @import 'pipeline-builder/app.scss';
 }
+
+// Pipeline Builder styles
+.ember-pipeline-monitor-engine {
+    @import 'pipeline-monitor/app.scss';
+}

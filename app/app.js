@@ -19,21 +19,28 @@ const App = Ember.Application.extend({
         }
       }
     },
-    emberSwarmUiEngine: {
+    emberPipelineBuilderEngine: {
       dependencies: {
         services: [
-          'store',
-          '-document'
+          'store'
         ],
         externalRoutes: {
           stack: 'ember-stack-builder-engine.editor.edit'
         }
       }
     },
-    emberPipelineBuilderEngine: {
+    emberPipelineMonitorEngine: {
       dependencies: {
         services: [
           'store'
+        ]
+      }
+    },
+    emberSwarmUiEngine: {
+      dependencies: {
+        services: [
+          'store',
+          '-document'
         ],
         externalRoutes: {
           stack: 'ember-stack-builder-engine.editor.edit'

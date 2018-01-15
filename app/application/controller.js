@@ -15,7 +15,6 @@ const ApplicationController = Ember.Controller.extend({
   actions: {
     selectUi(ui, index, type) {
 
-
       if (type === 'engine') {
         Ember.$('.iframe-view').each(function(key, value) {
           let iframeClasses = $(this).attr('class');
@@ -25,7 +24,7 @@ const ApplicationController = Ember.Controller.extend({
         });
       }
 
-      if (this.get('activeId') == ui.get('id')) {
+      if (this.get('activeId') === ui.get('id')) {
         return;
       }
 
