@@ -6,6 +6,7 @@ export default DS.Model.extend({
   name: attr('string'),
   scaling: attr('number'),
   restartRequested: attr('string'),
+  scalingRequested: attr('number'),
   pipelineInstance: DS.belongsTo('pipeline-instance'),
   status: DS.belongsTo('status', {
     async: true
