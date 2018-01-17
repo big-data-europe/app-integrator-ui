@@ -53,7 +53,7 @@
     "ember-radio-button": "https://github.com/lordblendi/ember-radio-button.git#ember-engine-fix2",
     "ember-resolver": "^4.5.0",
     "ember-stack-builder-engine": "https://github.com/big-data-europe/ember-stack-builder-engine.git#v0.3.8",
-    "ember-swarm-ui-engine": "https://github.com/big-data-europe/ember-swarm-ui-engine.git#v1.8.7",
+    "ember-swarm-ui-engine": "https://github.com/big-data-europe/ember-swarm-ui-engine.git#v1.8.8",
     "ember-truth-helpers": "^1.2.0",
     "ember-welcome-page": "^3.1.1",
     "install": "0.10.1",
