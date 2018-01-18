@@ -1,6 +1,6 @@
 {
   "name": "bde-integrator-user-interface",
-  "version": "1.8.11",
+  "version": "1.8.12",
   "description": "Wrapping user interface for embedding pipeline component interfaces",
   "license": "MIT",
   "author": "Aad Versteden <madnificent@gmail.com>",
