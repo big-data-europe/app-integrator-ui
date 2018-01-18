@@ -1,1 +1,16 @@
-  <iframe src="{{frameUrl}}"></iframe>
+{{#if keepIFrameState}}
+  {{!If keepIFrameState is true, the iframe is not initialized until it has been visited at least once, then we hide it but keep its state when on a different tab}}
+  {{#if hasBeenDisplayed}}
+    <iframe src="{{frameUrl}}"></iframe>
+  {{else}}
+    <iframe data-src="{{frameUrl}}"></iframe>
+  {{/if}}
+
+{{else}}
+  {{!If KeepIFrameState is false, we we deinit the iframe when it's not shown. This is useful in the cse of Kibana for ex, which can crash when hidden (as it's trying to check its size and cannot)}}
+  {{#if (eq activeUi ui)}}
+    <iframe src="{{frameUrl}}"></iframe>
+  {{else}}
+    <iframe data-src="{{frameUrl}}"></iframe>
+  {{/if}}
+{{/if}}

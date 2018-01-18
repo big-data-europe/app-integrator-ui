@@ -6,8 +6,15 @@ const ApplicationController = Ember.Controller.extend({
     appendPath: ""
   },
   activeUi: Ember.computed('model.[]', 'activeId', function() {
-    return this.get('model').findBy('id', this.get('activeId'));
+    let ui = this.get('model').findBy('id', this.get('activeId'));
+    if(!ui) { return null;}
+    let frames = this.get('visitedFrames');
+    if(!frames.contains(ui)) {
+      frames.pushObject(ui);
+    }
+    return ui;
   }),
+  visitedFrames: [],
 
   previousIndex: -1,
   directionClass: 'left',

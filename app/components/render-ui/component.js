@@ -16,7 +16,13 @@ const RenderUiComponent = Ember.Component.extend({
     return !(this.get('ui') === this.get('activeUi'));
   }),
 
-  isActive: Ember.computed.not('isHidden')
+  isActive: Ember.computed.not('isHidden'),
+
+  keepIFrameState: true,
+
+  hasBeenDisplayed: Ember.computed('ui', 'visitedFrames.@each.id', function(){
+    return this.get('visitedFrames').contains(this.get('ui'));
+  })
 });
 
 export default RenderUiComponent;
