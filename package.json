@@ -46,7 +46,7 @@
     "ember-modal-dialog": "^2.3.0",
     "ember-moment": "^7.4.1",
     "ember-new-computed": "^1.0.3",
-    "ember-pipeline-monitor-engine": "https://github.com/big-data-europe/ember-workflow-monitor-engine#v0.3.1",
+    "ember-pipeline-monitor-engine": "https://github.com/big-data-europe/ember-workflow-monitor-engine#v0.3.2",
     "ember-pipeline-builder-engine": "https://github.com/big-data-europe/ember-pipeline-builder-engine.git#v1.2.4",
     "ember-power-select": "^1.9.9",
     "ember-promise-helpers": "1.0.3",
