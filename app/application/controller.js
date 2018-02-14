@@ -9,7 +9,7 @@ const ApplicationController = Ember.Controller.extend({
     let ui = this.get('model').findBy('id', this.get('activeId'));
     if(!ui) { return null;}
     let frames = this.get('visitedFrames');
-    if(!frames.contains(ui)) {
+    if(!frames.includes(ui)) {
       frames.pushObject(ui);
     }
     return ui;
@@ -21,7 +21,6 @@ const ApplicationController = Ember.Controller.extend({
 
   actions: {
     selectUi(ui, index, type) {
-
       if (type === 'engine') {
         Ember.$('.iframe-view').each(function(key, value) {
           let iframeClasses = $(this).attr('class');
@@ -47,6 +46,7 @@ const ApplicationController = Ember.Controller.extend({
       this.set('activeId', ui.get('id'));
 
       if (type === 'iframe') {
+        this.model.set("engine", false);
         this.transitionToRoute('application');
       }
     }

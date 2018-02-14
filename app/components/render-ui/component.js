@@ -21,7 +21,7 @@ const RenderUiComponent = Ember.Component.extend({
   keepIFrameState: true,
 
   hasBeenDisplayed: Ember.computed('ui', 'visitedFrames.@each.id', function(){
-    return this.get('visitedFrames').contains(this.get('ui'));
+    return this.get('visitedFrames').includes(this.get('ui'));
   })
 });
 

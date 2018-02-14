@@ -16,11 +16,10 @@
   {{/md-navbar}}
 </div>
 
-
 {{#if activeUi}}
   <div class="frame-wrapper">
     {{#each model as |ui|}}
-      {{#if (eq ui.engine false)}}
+      {{#if (eq model.engine false)}}
         {{render-ui activeUi=activeUi ui=ui visitedFrames=visitedFrames classes=(concat directionClass " " ui.repoName)}}
       {{/if}}
     {{/each}}
